@@ -31,6 +31,12 @@ const useMusicPlayer = () => {
     if (state.isPlaying) {
       state.audioPlayer.pause();
     } else {
+      if (
+        state.currentTrackIndex === undefined ||
+        state.currentTrackIndex === null
+      ) {
+        setState((state) => ({ ...state, currentTrackIndex: 0 }));
+      }
       state.audioPlayer.play();
     }
     setState((state) => ({ ...state, isPlaying: !state.isPlaying }));

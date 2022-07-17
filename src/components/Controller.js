@@ -7,7 +7,7 @@ function Controller() {
   return (
     <div>
       <button onClick={player.playPreviousTrack}>Previous</button>
-      <button onClick={player.playTrack}>Play</button>
+      <button onClick={player.togglePlay}>Play</button>
       <button onClick={player.playNextTrack}>Next</button>
     </div>
   );
