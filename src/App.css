@@ -4,11 +4,34 @@
   align-items: center;
   padding: 10px;
   margin: 10px;
-  border: 1px solid black;
+  border: 1px solid gray;
   border-radius: 40px;
-  width: 200px;
+  width: 250px;
 }
 
 .component {
   padding: 30px;
+}
+
+.icon :hover {
+  background-color: lightgray;
+}
+
+.controller {
+  display: flex;
+}
+
+.track-list {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+}
+
+.current-song {
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.song-title {
+  padding-top: 20px;
 }

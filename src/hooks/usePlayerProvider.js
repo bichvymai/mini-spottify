@@ -31,13 +31,13 @@ const useMusicPlayer = () => {
     if (state.isPlaying) {
       state.audioPlayer.pause();
     } else {
-      if (
-        state.currentTrackIndex === undefined ||
-        state.currentTrackIndex === null
-      ) {
-        setState((state) => ({ ...state, currentTrackIndex: 0 }));
-      }
       state.audioPlayer.play();
+      console.log("aaa");
+
+      // setState((state) => ({
+      //   ...state,
+      //   audioPlayer: new Audio(state.tracks[index].file),
+      // }));
     }
     setState((state) => ({ ...state, isPlaying: !state.isPlaying }));
   }

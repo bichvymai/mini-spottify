@@ -6,7 +6,7 @@ import Track3 from "../tracks/Track3.mp3";
 const MusicPlayerContext = React.createContext();
 
 const defaultValues = {
-  audioPlayer: new Audio(),
+  audioPlayer: new Audio(Track1),
   tracks: [
     {
       name: "Cold Gin - Jazz",
@@ -21,7 +21,7 @@ const defaultValues = {
       file: Track3,
     },
   ],
-  currentTrackIndex: null,
+  currentTrackIndex: 0,
   isPlaying: false,
 };
 
